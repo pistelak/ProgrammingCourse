@@ -1,0 +1,8 @@
+
+target :Reviews do 
+	pod 'CSV.swift', '~> 2.3.1'
+end
+
+target :ReviewsTests do 
+	pod 'CSV.swift', '~> 2.3.1'
+end
