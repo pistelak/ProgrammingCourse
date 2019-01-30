@@ -19,16 +19,39 @@ import Foundation
  - 15 : "Review Link"
  */
 
+
+
+struct Review {
+    let starRating: Int
+    let reviewText: String
+}
+
+
 struct Statistics {
 
-    let reviews: [String]
+    let reviews: [Review]
+
+    func numberOfReviews(withRating rating: Int) -> Int {
+        var count = 0
+
+        for review in reviews {
+            if review.starRating == rating {
+                count += 1
+            }
+        }
+
+        return count
+    }
+
+    func numberOfReviewsWithFourStarRating() -> Int {
+        return numberOfReviews(withRating: 4)
+    }
 
     func numberOfReviewsWithFiveStarRating() -> Int {
-        fatalError("Please, implement me!")
+        return numberOfReviews(withRating: 5)
     }
 
     func averageRating() -> Double {
         fatalError("Please, implement me!")
     }
 }
-

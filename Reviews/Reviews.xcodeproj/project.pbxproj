@@ -104,6 +104,7 @@
 			children = (
 				2C48EE0121FA4059001F3273 /* Statistics.swift */,
 				2C48EE0621FA407A001F3273 /* reviews.csv */,
+				2C48EDEB21FA404C001F3273 /* Info.plist */,
 				2C48EE0321FA4064001F3273 /* Others */,
 			);
 			path = Reviews;
@@ -122,7 +123,6 @@
 		2C48EE0321FA4064001F3273 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				2C48EDEB21FA404C001F3273 /* Info.plist */,
 				2C48EDEA21FA404C001F3273 /* Reviews.h */,
 				2C48EE0421FA4064001F3273 /* CSVReader.swift */,
 			);
